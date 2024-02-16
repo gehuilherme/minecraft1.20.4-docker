@@ -2,7 +2,6 @@ FROM alpine:3.19.1
 
 WORKDIR /app
 COPY . /app
-# EXPOSE 25565
 ENV eula=true
 ENV min_mem=-Xms1G
 ENV max_mem=-Xmx2G

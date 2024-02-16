@@ -5,8 +5,6 @@ echo "eula=$eula" >> "eula.txt"
 echo "$min_mem" >> "user_jvm_args.txt"
 echo "$max_mem" >> "user_jvm_args.txt"
 
-cat server.properties
-
 echo "allow-flight=$allowflight" >> "server.properties"
 echo "allow-nether=$allownether" >> "server.properties"
 echo "broadcast-console-to-ops=$broadcastconsoletoops" >> "server.properties"
@@ -63,12 +61,6 @@ echo "text-filtering-config=$textfiltering-config" >> "server.properties"
 echo "use-native-transport=$usenativetransport" >> "server.properties"
 echo "view-distance=$viewdistance" >> "server.properties"
 echo "white-list=$whitelist" >> "server.properties"
-
-echo "\nAgora vai\n" 
-
-cat server.properties
-
-sleep 10
 
 java -jar forge-1.20.4-49.0.30-shim.jar --onlyCheckJava || exit 1
 
