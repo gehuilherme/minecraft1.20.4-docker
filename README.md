@@ -9,7 +9,7 @@ docker build -t minecraft-server:build -f ServerFiles/Dockerfile .
 docker container run -it -p 25565:25565  teste:stage
 ```
 
- - ENV:
+ - env:
  ```sh
  TODO
  ```

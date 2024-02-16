@@ -1,0 +1,18 @@
+version: '3'
+services:
+  minecraft-server-1.20.4:
+    container_name: minecraft-server-1.20.4
+    image: minecraft-server:build
+    ports:
+      - "[::]:25565:25565"
+      - "0.0.0.0:25565:25565"
+    volumes:
+      - world:/app/world
+    networks:
+      - minecraft-server
+
+networks:
+  minecraft-server:
+
+volumes:
+  world:
